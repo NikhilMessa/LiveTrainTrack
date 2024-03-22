@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- on the below line creating an edit text
+        for getting train number -->
+    <EditText
+        android:id="@+id/idEdtTrainNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:hint="Enter Train Number"
+        android:inputType="phone"
+        android:maxLength="5"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <!-- on the below line creating a text view for
+        selecting the date for which we want train status -->
+    <TextView
+        android:id="@+id/idTVDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idEdtTrainNumber"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:padding="5dp"
+        android:text="Select Date"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <!-- on the below line creating a progress bar
+        for displaying loader -->
+    <ProgressBar
+        android:id="@+id/idPBLoading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idTVDate"
+        android:visibility="gone" />
+
+    <!-- on the below line creating a text view for
+        displaying current train status -->
+    <TextView
+        android:id="@+id/idTVTrainStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idTVDate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- on the below line creating a button
+        to get the current train status -->
+    <Button
+        android:id="@+id/btnView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idTVTrainStatus"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25sp"
+        android:backgroundTint="#673AB7"
+        android:text="Get Live Train Status" />
+
+</RelativeLayout>
