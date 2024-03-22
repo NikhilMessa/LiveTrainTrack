@@ -1,1 +1,11 @@
-Certainly! The provided Android application is designed to allow users to check the live status of a train by entering its number and selecting a specific date. The app uses a combination of HTTP requests and HTML parsing to fetch and extract information from a website that provides live train status data. The user interface includes an input field for the train number, a date picker for selecting the date, and a button to initiate the status check. Upon retrieving the train status, the application navigates to a new activity, displaying relevant information such as the train status, number, name, starting point, end point, start time, and arrival time. The project employs various Android components, including activities, UI elements, HTTP requests, and background threading for a seamless user experience.
+liveTraintrack is an Android application designed to provide users with the live status of trains by entering the train number and selecting a specific date. The app fetches data from https://runningstatus.in/ using HTTP requests and HTML parsing techniques. The user interface includes input fields for the train number and date selection, along with a button to initiate the status check. Upon retrieving the train status, the app displays relevant information such as the train's current status, number, name, starting point, end point, departure time, and arrival time.
+
+**How to Use:**
+Enter the train number in the designated input field.
+Select the desired date using the date picker.
+Click on the "Check Status" button to retrieve the live status of the train.
+View the displayed information including current status, train details, and timings.
+
+
+Contributions:
+Contributions to liveTraintrack are welcome from developers interested in improving train status checking functionality or adding new features. To contribute, simply fork the repository, make your changes, and submit a pull request for review.
